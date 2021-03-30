@@ -330,9 +330,28 @@ footer{
         left:20px;
         top: 25px;
     }
+    
 }
 @media (max-width:600px){
 h1.h-p{
     display: block !important;
+}
+.project-list li {
+    width:30%
+}
+.project-list li a{
+    font-size: 14px;
+    height: 40px;
+    width: 50%
+}
+.border{
+    padding: 8px 0px 16px;
+}
+.projects {
+    height: 70vh;
+    margin-bottom: 0;
+}
+.contact .h-p {
+    margin-top: 48px;
 }
 }

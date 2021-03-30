@@ -6,39 +6,16 @@ window.addEventListener('load', (event) => {
 // Switch button > slide down
 let btn = document.querySelector('.switch');
 let dot = document.querySelector('.dot');
-let h = window.outerHeight;
+let h = window.innerHeight;
 function scrollWin(x, y) {
     window.scrollBy(x, y);
   }
 btn.addEventListener('click', function(){
     dot.classList.toggle('move');
-    scrollWin(0, h - 240)
+    scrollWin(0, h)
 })
 
-
-// Projects accordion
-
-// let links = document.querySelectorAll('.project-list li a');
-// let divs = document.querySelectorAll('.p-single');
-// divs[0].style.visibility = "visible";
-// links[0].classList.add('border');
-// function accordion(){
-//   for(let i = 0; i < links.length; i++){    
-//     links[i].addEventListener('click', (e) => {
-//     e.preventDefault();
-//     divs[0].style.visibility = 'hidden';
-//     links[0].classList.remove('border');
-//     links[i].classList.toggle('border');
-//     divs[i].classList.toggle('block');
-//   })
-//   links[i].addEventListener('blur', (e) => {
-//     links[i].classList.remove('border');
-//     divs[i].classList.remove('block');
-//   })
-// }
-// }
-// accordion()
-
+// Accordion
 let buttons = document.querySelectorAll('.link');
 let divs = document.querySelectorAll('.p-single');
 for(let i =0; i < buttons.length; i++){
