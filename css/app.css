@@ -25,7 +25,7 @@ body {
 .container {
   width: 80%;
   margin: auto;
-  margin-top: 64px;
+  margin-top: 32px;
   position: relative;
 }
 
@@ -109,6 +109,7 @@ nav {
 
 .hero {
   margin-top: 72px;
+  height: 100vh;
 }
 
 .hero span {
@@ -183,7 +184,6 @@ nav {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 48px;
-  margin-bottom: 181px;
 }
 
 .switch {
@@ -207,6 +207,7 @@ nav {
 .load-page h3 {
   color: #F9F9F9;
   margin-left: 16px;
+  font-weight: 400;
 }
 
 .move {
@@ -217,10 +218,13 @@ nav {
 }
 
 .h-p {
-  margin-top: 96px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.h-p:nth-child(1) {
+  margin-top: 96px;
 }
 
 .h-p {
@@ -242,7 +246,6 @@ nav {
           justify-content: center;
   width: 70%;
   margin: 72px auto 72px;
-  height: 500px;
 }
 
 .project-list li {
@@ -258,6 +261,7 @@ nav {
   min-width: 100px;
   height: 50px;
   text-align: center;
+  text-decoration: none;
 }
 
 .border {
@@ -342,6 +346,12 @@ nav {
   padding-bottom: 96px;
 }
 
+.contact {
+  display: block;
+  height: auto;
+  margin-top: 15%;
+}
+
 hr {
   height: 0.3px;
   background-color: rgba(161, 161, 161, 0.328);
@@ -372,6 +382,7 @@ footer {
   .projects {
     display: block;
     width: 100%;
+    min-height: 55vh;
   }
   .project-list {
     display: -webkit-box;
@@ -389,20 +400,10 @@ footer {
   }
 }
 
-@media (max-width: 400px) {
-  .img1 {
-    min-width: 80px;
-  }
-  .img2 {
-    min-width: 30px;
-    left: 20px;
-    top: 25px;
-  }
-}
-
 @media (max-width: 600px) {
   h1.h-p {
     display: block !important;
+    margin-top: 64px;
   }
   .project-list li {
     width: 30%;
@@ -416,11 +417,19 @@ footer {
     padding: 8px 0px 16px;
   }
   .projects {
-    height: 70vh;
     margin-bottom: 0;
   }
   .contact .h-p {
     margin-top: 48px;
+  }
+}
+
+@media (max-width: 400px) {
+  .img1 {
+    min-width: 80px;
+  }
+  .img2 {
+    min-width: 30px;
   }
 }
 /*# sourceMappingURL=app.css.map */

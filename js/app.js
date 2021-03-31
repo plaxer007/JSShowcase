@@ -7,12 +7,12 @@ window.addEventListener('load', (event) => {
 let btn = document.querySelector('.switch');
 let dot = document.querySelector('.dot');
 let h = window.innerHeight;
-function scrollWin(x, y) {
-    window.scrollBy(x, y);
+function scrollBottom(x, y) {
+    window.scroll(x, y);
   }
 btn.addEventListener('click', function(){
     dot.classList.toggle('move');
-    scrollWin(0, h)
+    scrollBottom(0, h)
 })
 
 // Accordion
