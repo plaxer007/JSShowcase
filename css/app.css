@@ -400,6 +400,12 @@ footer {
   .p-single {
     margin-left: 0;
   }
+  .p-single p {
+    height: 25vh;
+  }
+  .contact {
+    margin-top: 60%;
+  }
 }
 
 @media (max-width: 600px) {
