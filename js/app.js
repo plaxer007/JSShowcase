@@ -12,7 +12,7 @@ function scrollBottom(x, y) {
   }
 btn.addEventListener('click', function(){
     dot.classList.toggle('move');
-    scrollBottom(0, h)
+    scrollBottom(0, h * 2)
 })
 
 // Accordion
